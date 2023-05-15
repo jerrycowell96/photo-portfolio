@@ -14,37 +14,41 @@ const Header = () => {
     <div className='flex flex-col lg:flex-row
     lg:items-center w-full justify-between'>
       { /* logo */}
-      <Link to={'/'}>
+      <Link to={'/'} className='max-w-[200px]'>
         <img src={Logo} alt='' />
       </Link>
 
       { /* nav - initially hidden - show on desktop mode */}
 
       <nav className='hidden lg:flex gap-x-12 font-semibold'>
-        <Link 
+        <Link
         to={'/'} className='text-[#696c6d] hover:text-primary transition'
         >
           Home
           </Link>
 
-          <Link 
+          <Link
         to={'/about'} className='text-[#696c6d] hover:text-primary transition'
         >
           About
           </Link>
 
-          <Link 
+          <Link
         to={'/portfolio'} className='text-[#696c6d] hover:text-primary transition'
         >
           Portfolio
           </Link>
 
-          <Link 
+          <Link
         to={'/Contact'} className='text-[#696c6d] hover:text-primary transition'
         >
           Contact
           </Link>
         </nav>
+        {/* socials */}
+        <Socials />
+        {/* mobile nav */}
+        <MobileNav />
       </div>
 
   </header>;
