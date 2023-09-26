@@ -4,9 +4,20 @@ import WomanImg from '../img/about/woman.png';
 // import link 
 import { Link } from 'react-router-dom';
 
+import { motion } from 'framer-motion';
+//import transitions
+
+import { transition1 } from '../transitions';
+
 
 const About = () => {
-  return <section className='section'>
+  return <motion.section
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1}}
+    exit={{ opacity: 0 }}
+    tansition={transition1}  
+    className='section'
+    >
     <div className='container mx-auto h-full relative'>
       {/* text & img wrapper */}
       <div className='flex flex-col justify-center lg:flex-row
@@ -19,7 +30,12 @@ const About = () => {
       </div>
       { /* text */}
 
-      <div className='flex-1 pt-36 pb-14 lg:pt-0
+      <motion.div 
+      initial={{ opacity: 0, y: '100%' }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: '100%' }}
+      tansition={transition1} 
+      className='flex-1 pt-36 pb-14 lg:pt-0
       lg:w-auto z-10 flex flex-col justify-center
       items-center lg:items-start'>
         <h1 className='h1'> 
@@ -38,10 +54,10 @@ const About = () => {
           Quis est ullamco deserunt in et ea. 
         </p>
         <Link to={'/portfolio'} className='btn flex'>View my Work</Link>
-      </div>
+      </motion.div>
       </div>
     </div>        
-  </section>;
+  </motion.section>;
 };
 
 export default About;

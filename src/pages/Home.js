@@ -26,10 +26,10 @@ const Home = () => {
         lg:w-auto z-10 lg:absolute flex flex-col
         justify-center items-center lg:items-start'>
           <h1 className='h1'>
-            Photograph <br /> & film maker
+            Web Developer <br /> & More
             </h1>
             <p className='text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-12'> 
-            Los Angeles, USA
+            Ohio, USA
             </p>
             <Link to={'/contact'} className='btn mb-[30px]'>
               Hire Me
