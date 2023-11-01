@@ -30,7 +30,7 @@ const Contact = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: '-25%' }}
                   tansition={transition1} 
-                  className='hidden lg:flex bg-[#C29381] 
+                  className='hidden lg:flex bg-[#8ab5b8] 
                   absolute bottom-0 left-0 right-0 top-72 -z-10'>
 
                   </motion.div>

@@ -1,7 +1,6 @@
 import React from 'react';
 //import images
 import WomanImg from '../img/home/woman.png';
-import ContactImg from '../img/contact/contact.jpg'; 
 //import links
 import { Link } from 'react-router-dom';
 //import motion
@@ -16,7 +15,7 @@ const Home = () => {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
-    tansition={transition1} 
+    transition={transition1} 
     className='section'
     >
     <div className='container mx-auto h-full relative'>
@@ -32,9 +31,6 @@ const Home = () => {
             <p className='text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-12'> 
             Ohio, USA
             </p>
-            <Link to={'/contact'} className='btn mb-[30px]'>
-              Hire Me
-            </Link>
             <Link to={'/contact'} className='btn mb-[30px]'>
               Hire Me
             </Link>
