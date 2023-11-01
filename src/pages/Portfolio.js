@@ -76,7 +76,8 @@ const Portfolio = () => {
 
     </div>
 
-  </motion.section>;
+  </motion.section>
+  ;
 };
 
 export default Portfolio;

@@ -1,6 +1,10 @@
 import React from 'react';
 //import images
 import WomanImg from '../img/contact/woman.png';
+import ContactImg from '../img/contact/contact.jpg'; 
+
+import RenewImg from '../img/contact/renew.jpg';
+
 
 import { motion } from 'framer-motion';
 //import transitions
@@ -26,7 +30,7 @@ const Contact = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: '-25%' }}
                   tansition={transition1} 
-                  className='hidden lg:flex bg-[#eef7f9] 
+                  className='hidden lg:flex bg-[#C29381] 
                   absolute bottom-0 left-0 right-0 top-72 -z-10'>
 
                   </motion.div>
@@ -55,7 +59,7 @@ const Contact = () => {
                       </form></p>
                   </div>
                   {/* images */}
-                  <div className='lg-flex-1'>
+                  <div className='sm-flex-2'>
                     <img src={WomanImg} alt='' />
                   </div>
                 </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 //import images
 import WomanImg from '../img/home/woman.png';
+import ContactImg from '../img/contact/contact.jpg'; 
 //import links
 import { Link } from 'react-router-dom';
 //import motion
@@ -34,6 +35,10 @@ const Home = () => {
             <Link to={'/contact'} className='btn mb-[30px]'>
               Hire Me
             </Link>
+            <Link to={'/contact'} className='btn mb-[30px]'>
+              Hire Me
+            </Link>
+            
 
         </div>
         {/* images */}
