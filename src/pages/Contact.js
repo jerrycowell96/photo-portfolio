@@ -1,9 +1,6 @@
 import React from 'react';
 //import images
 import WomanImg from '../img/contact/woman.png';
-import ContactImg from '../img/contact/contact.jpg'; 
-
-import RenewImg from '../img/contact/renew.jpg';
 
 
 import { motion } from 'framer-motion';
@@ -13,7 +10,7 @@ import { transition1 } from '../transitions';
 
 
 const Contact = () => {
-  return( 
+  return ( 
   <motion.section 
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}

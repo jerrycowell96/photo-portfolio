@@ -11,7 +11,8 @@ import { motion } from 'framer-motion';
 import { transition1 } from '../transitions';
 
 const Home = () => {
-  return( <motion.section 
+  return ( 
+  <motion.section 
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
@@ -26,7 +27,7 @@ const Home = () => {
         lg:w-auto z-10 lg:absolute flex flex-col
         justify-center items-center lg:items-start'>
           <h1 className='h1'>
-            Web Developer <br /> & More
+            Photographer <br /> & More
             </h1>
             <p className='text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-12'> 
             Ohio, USA
