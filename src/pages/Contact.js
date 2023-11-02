@@ -15,7 +15,7 @@ const Contact = () => {
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   exit={{ opacity: 0 }}
-  tansition={transition1} 
+  transition={transition1} 
   className='section'>
             <div className='container mx-auto h-full'>
                 <div className='flex flex-col lg:flex-row h-full
